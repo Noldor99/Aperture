@@ -1,0 +1,83 @@
+body {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF; }
+
+#header {
+  width: 100%;
+  background: #181818;
+  position: fixed; }
+  #header .wrap__header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0; }
+    #header .wrap__header .logo {
+      padding-left: 32px; }
+    #header .wrap__header .header__text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      #header .wrap__header .header__text ul {
+        display: flex;
+        flex-wrap: wrap; }
+        #header .wrap__header .header__text ul a {
+          text-decoration: none;
+          padding-right: 32px;
+          color: #FFFFFF; }
+          #header .wrap__header .header__text ul a:nth-child(1) {
+            padding-right: 56px; }
+      #header .wrap__header .header__text button {
+        margin-right: 20px;
+        background: #FFFFFF;
+        border-radius: 14px;
+        padding: 9px 20px 13px;
+        color: #000000;
+        border: none; }
+
+#main .section__intro {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 466px;
+  padding-bottom: 40px;
+  background-image: url(/img/river.jpg); }
+  #main .section__intro .flex__intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #main .section__intro .flex__intro .title__intro .title__p1 {
+      padding-bottom: 1px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center; }
+    #main .section__intro .flex__intro .title__intro h1 {
+      font-size: 54px;
+      line-height: 59px;
+      padding-bottom: 18px;
+      text-align: center; }
+    #main .section__intro .flex__intro .title__intro .title__p2 {
+      width: 580px;
+      margin: 0 auto;
+      padding-bottom: 14px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center; }
+  #main .section__intro .logo__intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 40px; }
+    #main .section__intro .logo__intro .logo__items {
+      padding-right: 16px;
+      display: flex; }
+      #main .section__intro .logo__intro .logo__items img {
+        padding-right: 6px; }
+      #main .section__intro .logo__intro .logo__items p {
+        font-size: 12px;
+        line-height: 12px; }
+
+/*# sourceMappingURL=style.css.map */
