@@ -1,4 +1,27 @@
 
+%button_white
+   padding: 9px 10px 13px 42px
+   background: white
+   border-radius: 14px
+   position: relative
+   border: none
+   &::after
+      position: absolute
+      content: ''
+      top: 2px
+      left: 2px
+      width: 32px
+      height: 32px
+      border-radius: 50%
+      background: black
+
+%wrapp_star
+   max-width: 1440px
+   margin: 0 auto
+%wrapp_01
+   max-width: 1168px
+   margin: 0 auto
+
 body
    font-family: 'Poppins'
    font-style: normal
@@ -43,15 +66,16 @@ body
             border: none
 #main
    .section__intro
-      max-width: 1440px
-      margin: 0 auto
+      width: 100%
       padding-top: 466px
       padding-bottom: 40px
-      background-image: url(/img/river.jpg)
+      background: url(/img/river.jpg) no-repeat center
+      background-size: cover
       .flex__intro
          display: flex
          flex-wrap: wrap
          justify-content: center
+         @extend %wrapp_star
          .title__intro
             .title__p1
                padding-bottom: 1px
@@ -85,3 +109,173 @@ body
             p
                font-size: 12px
                line-height: 12px
+   .area
+      background: black
+      .wrap__area
+         @extend %wrapp_star
+         padding-top: 112px
+         padding-bottom: 100px
+         h2
+            padding-bottom: 15px
+            font-size: 40px
+            line-height: 42px
+            text-align: center
+         >p
+            padding-bottom: 42px
+            font-weight: 400
+            font-size: 23px
+            line-height: 30px
+            text-align: center
+         .grid__area
+            display: grid
+            grid-template-columns: repeat(2,1fr)
+            grid-gap: 16px
+            width: 1168px
+            margin: 0 auto
+            .area__item
+               background: url(/img/area_1.jpg) no-repeat
+               padding-top: 421px
+               padding-bottom: 30px
+               padding-left: 30px
+               &:nth-child(2)
+                  background: url(/img/area_2.jpg) no-repeat
+               &:nth-child(3)
+                  background: url(/img/area_3.jpg) no-repeat
+               &:nth-child(4)
+                  background: url(/img/area_4.jpg) no-repeat
+
+               h3
+                  padding-bottom: 15px
+                  font-weight: 400
+                  font-size: 14px
+                  line-height: 20px
+                  letter-spacing: 2px
+                  text-transform: uppercase
+               p
+                  font-weight: 400
+                  font-size: 14px
+                  line-height: 20px
+                  width: 501px
+                  padding-bottom: 15px
+               button
+                  @extend %button_white
+   .mount
+      width: 100%
+      background: url(../img/mount.jpg) no-repeat center
+      background-size: cover
+      .wrap__mount
+         @extend %wrapp_star
+         padding-top: 260px
+         padding-bottom: 260px
+         display: flex
+         max-width: 1316px
+         justify-content: flex-end
+         .flex__wrap
+            h2
+               font-weight: 400
+               font-size: 14px
+               line-height: 20px
+               letter-spacing: 2px
+               text-transform: uppercase
+            p
+               font-weight: 400
+               font-size: 14px
+               line-height: 20px
+               color: #C0C0C0
+               width: 298px
+   .photo
+      .wrap__photo
+         .flex__photo
+
+            display: flex
+            .photo__item
+               background: #000000
+               padding-top: 173px
+               padding-bottom: 153px
+               padding-left: 100px
+               width: 50%
+               .parag__1
+                  padding-bottom: 6px
+                  font-weight: 400
+                  font-size: 14px
+                  line-height: 20px
+                  letter-spacing: 2px
+                  text-transform: uppercase
+                  color: #C0C0C0
+               h2
+                  padding-bottom: 14px
+                  font-weight: 400
+                  font-size: 28px
+                  line-height: 32px
+               .parag__2
+                  padding-bottom: 20px
+                  width: 514px
+                  font-weight: 400
+                  font-size: 14px
+                  line-height: 20px
+                  font-family: 'Poppins'
+               button
+                  @extend %button_white
+            .photo__img
+               width: 50%
+               background: url(../img/pfoto.jpg) no-repeat center
+               background-size: cover
+
+   .least
+      width: 100%
+      background: url(../img/mount.jpg) no-repeat center
+      background-size: cover
+      .wrap__least
+         @extend %wrapp_star
+         padding-top: 260px
+         padding-bottom: 260px
+         display: flex
+         max-width: 1316px
+         justify-content: flex-end
+         .flex__least
+            h2
+               font-weight: 400
+               font-size: 14px
+               line-height: 20px
+               letter-spacing: 2px
+               text-transform: uppercase
+            p
+               font-weight: 400
+               font-size: 14px
+               line-height: 20px
+               color: #C0C0C0
+               width: 273px
+               font-family: 'Poppins'
+   .clients
+      width: 100%
+      background: black
+      padding-top: 113px
+      padding-bottom: 140px
+      .wrap__clients
+         h2
+            font-weight: 400
+            font-size: 40px
+            line-height: 42px
+            text-align: center
+            padding-bottom: 15px
+         p
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 400
+            font-size: 24px
+            line-height: 30px
+            text-align: center
+            color: #C0C0C0
+            padding-bottom: 82px
+         .clients__itams
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+
+            img
+
+               padding-right: 109px
+               display: block
+               &:last-child
+                  padding-right: 0

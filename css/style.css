@@ -1,3 +1,23 @@
+#main .area .wrap__area .grid__area .area__item button, #main .photo .wrap__photo .flex__photo .photo__item button {
+  padding: 9px 10px 13px 42px;
+  background: white;
+  border-radius: 14px;
+  position: relative;
+  border: none; }
+  #main .area .wrap__area .grid__area .area__item button::after, #main .photo .wrap__photo .flex__photo .photo__item button::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 2px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: black; }
+
+#main .section__intro .flex__intro, #main .area .wrap__area, #main .mount .wrap__mount, #main .least .wrap__least {
+  max-width: 1440px;
+  margin: 0 auto; }
+
 body {
   font-family: "Poppins";
   font-style: normal;
@@ -39,11 +59,11 @@ body {
         border: none; }
 
 #main .section__intro {
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
   padding-top: 466px;
   padding-bottom: 40px;
-  background-image: url(/img/river.jpg); }
+  background: url(/img/river.jpg) no-repeat center;
+  background-size: cover; }
   #main .section__intro .flex__intro {
     display: flex;
     flex-wrap: wrap;
@@ -79,5 +99,158 @@ body {
       #main .section__intro .logo__intro .logo__items p {
         font-size: 12px;
         line-height: 12px; }
+#main .area {
+  background: black; }
+  #main .area .wrap__area {
+    padding-top: 112px;
+    padding-bottom: 100px; }
+    #main .area .wrap__area h2 {
+      padding-bottom: 15px;
+      font-size: 40px;
+      line-height: 42px;
+      text-align: center; }
+    #main .area .wrap__area > p {
+      padding-bottom: 42px;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 30px;
+      text-align: center; }
+    #main .area .wrap__area .grid__area {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
+      width: 1168px;
+      margin: 0 auto; }
+      #main .area .wrap__area .grid__area .area__item {
+        background: url(/img/area_1.jpg) no-repeat;
+        padding-top: 421px;
+        padding-bottom: 30px;
+        padding-left: 30px; }
+        #main .area .wrap__area .grid__area .area__item:nth-child(2) {
+          background: url(/img/area_2.jpg) no-repeat; }
+        #main .area .wrap__area .grid__area .area__item:nth-child(3) {
+          background: url(/img/area_3.jpg) no-repeat; }
+        #main .area .wrap__area .grid__area .area__item:nth-child(4) {
+          background: url(/img/area_4.jpg) no-repeat; }
+        #main .area .wrap__area .grid__area .area__item h3 {
+          padding-bottom: 15px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 2px;
+          text-transform: uppercase; }
+        #main .area .wrap__area .grid__area .area__item p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          width: 501px;
+          padding-bottom: 15px; }
+#main .mount {
+  width: 100%;
+  background: url(../img/mount.jpg) no-repeat center;
+  background-size: cover; }
+  #main .mount .wrap__mount {
+    padding-top: 260px;
+    padding-bottom: 260px;
+    display: flex;
+    max-width: 1316px;
+    justify-content: flex-end; }
+    #main .mount .wrap__mount .flex__wrap h2 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    #main .mount .wrap__mount .flex__wrap p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #C0C0C0;
+      width: 298px; }
+#main .photo .wrap__photo .flex__photo {
+  display: flex; }
+  #main .photo .wrap__photo .flex__photo .photo__item {
+    background: #000000;
+    padding-top: 173px;
+    padding-bottom: 153px;
+    padding-left: 100px;
+    width: 50%; }
+    #main .photo .wrap__photo .flex__photo .photo__item .parag__1 {
+      padding-bottom: 6px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #C0C0C0; }
+    #main .photo .wrap__photo .flex__photo .photo__item h2 {
+      padding-bottom: 14px;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 32px; }
+    #main .photo .wrap__photo .flex__photo .photo__item .parag__2 {
+      padding-bottom: 20px;
+      width: 514px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      font-family: "Poppins"; }
+  #main .photo .wrap__photo .flex__photo .photo__img {
+    width: 50%;
+    background: url(../img/pfoto.jpg) no-repeat center;
+    background-size: cover; }
+#main .least {
+  width: 100%;
+  background: url(../img/mount.jpg) no-repeat center;
+  background-size: cover; }
+  #main .least .wrap__least {
+    padding-top: 260px;
+    padding-bottom: 260px;
+    display: flex;
+    max-width: 1316px;
+    justify-content: flex-end; }
+    #main .least .wrap__least .flex__least h2 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    #main .least .wrap__least .flex__least p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #C0C0C0;
+      width: 273px;
+      font-family: "Poppins"; }
+#main .clients {
+  width: 100%;
+  background: black;
+  padding-top: 113px;
+  padding-bottom: 140px; }
+  #main .clients .wrap__clients h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    padding-bottom: 15px; }
+  #main .clients .wrap__clients p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #C0C0C0;
+    padding-bottom: 82px; }
+  #main .clients .wrap__clients .clients__itams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    #main .clients .wrap__clients .clients__itams img {
+      padding-right: 109px;
+      display: block; }
+      #main .clients .wrap__clients .clients__itams img:last-child {
+        padding-right: 0; }
 
 /*# sourceMappingURL=style.css.map */
